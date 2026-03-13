@@ -1,4 +1,3 @@
-// ТЕМА
 
 const toggle=document.getElementById("themeToggle");
 
