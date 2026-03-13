@@ -16,10 +16,6 @@ document.cookie=name+"="+encodeURIComponent(value)+expires+"; path=/";
 
 }
 
-/**
- * Получить cookie
- * @param {string} name
- */
 function getCookie(name){
 
 const nameEQ=name+"=";
