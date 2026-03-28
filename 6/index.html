@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>API Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>API Мастерская | Интерактивный демо-сайт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#" id="usersTab" class="active">Пользователи</a></li>
-        <li><a href="#" id="postsTab">Посты</a></li>
-        <li><a href="#" id="todosTab">Задачи</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="content">
-    <p>Выберите раздел меню для загрузки данных.</p>
-  </main>
-
-  <!-- Модальное окно -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h3 id="modalTitle">Заголовок</h3>
-      <form id="modalForm">
-        <!-- Динамическое содержимое формы -->
-      </form>
+<header class="site-header">
+    <div class="nav-container">
+        <div class="logo">✨ API Playground</div>
+        <div class="nav-links">
+            <button class="nav-btn" data-api="posts">📝 Посты (JSONPlaceholder)</button>
+            <button class="nav-btn" data-api="todos">✅ Задачи (JSONPlaceholder)</button>
+            <button class="nav-btn" data-api="comments">💬 Комментарии (JSONPlaceholder)</button>
+        </div>
     </div>
-  </div>
+</header>
 
-  <script src="script.js"></script>
+<main class="main-content">
+    <div id="api-view-container" class="api-panel">
+        <!-- Динамический контент загружается сюда -->
+        <div class="loading">✨ Выберите раздел из меню, чтобы начать работу с API</div>
+    </div>
+</main>
+
+<footer>
+    🚀 Интерактивный стенд: GET / POST / PUT / DELETE — все методы с живыми данными (JSONPlaceholder mock API)
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
