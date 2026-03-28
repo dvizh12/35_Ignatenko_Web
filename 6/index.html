@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>API Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" id="usersTab" class="active">Пользователи</a></li>
+        <li><a href="#" id="postsTab">Посты</a></li>
+        <li><a href="#" id="todosTab">Задачи</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <p>Выберите раздел меню для загрузки данных.</p>
+  </main>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Заголовок</h3>
+      <form id="modalForm">
+        <!-- Динамическое содержимое формы -->
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
